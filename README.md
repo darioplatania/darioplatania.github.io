@@ -1,44 +1,49 @@
-This repository is no longer maintained. 
-============
+# Autm-rb
 
-Herring Cove
-============
+Another theme for jekyll.
+based on shiori and midnight
 
-Herring Cove is a clean and responsive theme for Jekyll. 
+##[DEMO][demo]
+
+- DISQUS comments
+- google analitics
+- pagination
+- tags
+- codehighlighting
+- bootstrap components
+- font awesome
+
+#### Contribution
+Pull Requests always welcome.
+
+## Screens
+
+![](http://i.imgur.com/i1OZoFF.png)
+![](http://i.imgur.com/oc2ZfjH.png)
+
+## Installation
+
+- [Fork this repository][fork]
+- Clone it: `git clone https://github.com/YOUR-USER/autm-rb`
+- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
+- Run the jekyll server: `jekyll serve` or `bundle exec jekyll serve`
+
+## Customization
+
+Edit this files before using 
+ 
+- _config.yml REQUIRED
+- /index.html - change the default image and email
+- /projects.html - here you can share some of your projects
+- /resume.html - write something about you
+- /favicon.ico change it or leave the existing one
+- _includes/title.html REQUIRED
+
+## Licensing
+
+[MIT](https://github.com/railsr/autm-rb/blob/master/LICENSE)
 
 
-### Overview 
-
-* Fixed Sidebar with social links
-* Minimal design 
-* Comments by Disqus
-* Social Sharing abilities 
-* Easy to configure
-* Based on Bootstrap
-
-### Screenshots
-
-![screenshot](/images/screenshot1.png)
-![screenshot](/images/screenshot2.png)
-
-### Setup
-
-1. Install Jekyll
-2. Fork or [download](https://github.com/arnp/herring-cove/archive/master.zip) this theme repo
-3. Edit the `_config.yml` file
-
-You can change the showcase image by replacing `showcase.jpg` file in the `images` folder. I'll try to find a better way to do this soon. 
-
-### Download
-
-[download](https://github.com/arnp/herring-cove/archive/master.zip)
-
-### License
-* [MIT](http://opensource.org/licenses/MIT)
-
--------------
-Herring Cove is always a work in progress and as such, I hope to clean up the code and add features as time permits. Feel free to add your own additions. 
-
-*What's with the name?*
-
-[Herring Cove](http://www.capecodbeachchair.com/beachguide/index.cfm?page=3&BeachID=5) is a beach on Cape Cod in Provincetown, Massachusetts. If you're in the area, be sure to check it out!
+[pages]: http://pages.github.com
+[fork]: https://github.com/railsr/autm-rb/fork
+[demo]: http://railsr.github.io/autm-rb/
