@@ -1,50 +1,31 @@
-# Build settings
-permalink   : /blog/:year/:title/
-markdown    : kramdown
-highlighter : pygments
+name: Herring Cove
+author: Herring Cove
+baseurl: /herring-cove
+description: theme for jekyll
+github: http://www.github.com/arnp
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: rnpatel[at]me.com
+location: 42°2'16"N   70°12'47"W
+disqus: diqus-username
 
-paginate: 3
-paginate_path: "/blog/page/:num/"
-comments: true
-
-source: source
-destination: _site
-sass:
-  sass_dir: _scss
-  style: compressed # expanded
-
-# SEO settings
-title:
-description: "My personal page"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url:
-# baseurl: "/darioplatania"
+##Make sure to edit the above fields, especially for disqus.
 
 
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 
-
-# Author settings
-author:
-  name      : Dario Platania
-  job       : Computer Engineer
-  bio1       : "Web Developer"
-  bio2       : "Co-Founder & Team Coordinator"
-  thumb     : /images/dp.jpg
-  email     : dariopl91@gmail.com
-  url       : 
-  github    : https://github.com/darioplatania
-  facebook  : https://www.facebook.com/SicilyOnRails/?fref=ts
-  instagram : https://www.instagram.com/plataniadario/
-
-# navbar pages
-navbar:
-  - slug: about
-    title: About
-  # - slug: resume
-  #   title: Resume
-  # - slug: skills
-  #   title: Skills
-  - slug: blog
-    title: Blog
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

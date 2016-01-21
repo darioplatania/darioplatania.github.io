@@ -1,22 +1,39 @@
 ---
-layout: home
+title: Herring Cove
 ---
+{% include showcase.html %}
+{% include greeting.html %}
 
-<section class="hero">
-
-  <div class="hero-inner container">
-
-    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
-    <h1>Hello!..</h1>
-    <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
-    <h5>{{ site.author.bio1 }}</h5>
-    <h5>{{ site.author.bio2 }} <a href="http://www.sicilyonrails.org/"> <strong itemprop="name">SicilyOnRails</strong> </a></h5>
-    <br><br>
-    <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-ghost">about</a>
-    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-ghost">blog</a>
-
-    {% include social.html %}
-
-  </div>
-
-</section>
+{% if site.posts != empty %}
+<div class="recent-posts">
+  <h1>Recent Posts</h1>
+  {% for post in site.posts limit: 3 %}
+    {% if forloop.first %}
+      {% assign add_class = 'most-recent' %}
+      {% capture fresh_tag %}
+        &nbsp;<span class="badge"><smaller>FRESH</smaller></span>
+      {% endcapture %}
+    {% endif %}
+    <ul class="homepage-posts {{ add_class }}">
+      <li>
+        <span>
+          <h4>
+            <a href="{{ site.baseurl }}/{{ post.url }}">
+              {{ post.title }}
+            </a>
+            {{ fresh_tag }}
+            <time class="pull-right">
+              {{ post.date | date_to_string | date: "%b %-d, %Y"  }}
+            </time>
+          </h4>
+        </span>
+      </li>
+    </ul>
+    {% assign add_class = '' %}
+    {% assign fresh_tag = '' %}
+  {% endfor %}
+  <ul>
+    <a href="{{ site.baseurl }}/list.html">View More...</a>
+  </ul>
+</div>
+{% endif %}

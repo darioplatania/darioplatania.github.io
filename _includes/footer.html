@@ -1,8 +1,9 @@
-<footer class="site-footer">
-  <div class="container">
-    {% include social.html %}
-    <p class="txt-medium-gray">
-      <small>&copy;{{ site.time | date: '%Y' }} All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></small>
+<div class="container">
+  <footer>
+    <p class="text-muted credit">
+      &copy; {{ site.time | date: '%Y' }} {{ site.name }} &middot;
+      <a href="https://github.com/arnp/herring-cove"> Herring Cove for Jekyll </a>
+      {{ site.time }}
     </p>
-  </div>
-</footer>
+  </footer>
+</div>
