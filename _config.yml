@@ -1,0 +1,50 @@
+# Build settings
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
+# SEO settings
+title:
+description: "My personal page"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
+url:
+# baseurl: "/darioplatania"
+
+
+
+
+# Author settings
+author:
+  name      : Dario Platania
+  job       : Computer Engineer
+  bio1       : "Web Developer"
+  bio2       : "Co-Founder & Team Coordinator"
+  thumb     : /images/dp.jpg
+  email     : dariopl91@gmail.com
+  url       : 
+  github    : https://github.com/darioplatania
+  facebook  : https://www.facebook.com/SicilyOnRails/?fref=ts
+  instagram : https://www.instagram.com/plataniadario/
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  # - slug: resume
+  #   title: Resume
+  # - slug: skills
+  #   title: Skills
+  - slug: blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
