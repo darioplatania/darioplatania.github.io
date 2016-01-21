@@ -1,22 +1,25 @@
 <div id="title">
   <h1>
     {% unless site.git == "" %}
-		  <a id="git-ic" href="{{site.git}}"><i class="fa fa-github"></i></a>	
+		  <a id="git-ic" href="{{site.git}}"><i class="fa fa-github"></i></a>
     {% endunless %}
 
     {% unless site.stackoverflow == "" %}
       <a id="so-ic" href="{{site.stackoverflow}}"><i class="fa fa-stack-overflow"></i></a>
     {% endunless %}
-		
-    <a id="sitename" href="{{site.baseurl}}">username.github.io</a>
+
+    <a id="sitename" href="{{site.baseurl}}">darioplatania.github.io</a>
   </h1>
+    <br>
 
+    <div align="center">
   <!-- Add something about you in p tag-->
-  <p>Write something about you here...</p>
-  <hr/>
-  
-  {% include nav-links.html %} 
-	 
+      <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+      <h5>{{ site.author.bio1 }}</h5>
+      <h5>{{ site.author.bio2 }} <a href="http://www.sicilyonrails.org/"> <strong itemprop="name">SicilyOnRails</strong> </a></h5>
+      <br><br>
+    </div>
+
+  {% include nav-links.html %}
+
 </div>
-
-
