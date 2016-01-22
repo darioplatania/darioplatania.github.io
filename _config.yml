@@ -1,58 +1,25 @@
-baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "darioplatania.github.io" # the base hostname & protocol for your site.
-title: "darioplatania-blog"
+# Site settings
 
+title: darioplatania # Title of your site
+email: dariopl91@gmail.com # Your contant email
 
-paginate: 3 #articles per page
-paginate_path: /blog/page:num #makes pagination working
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://darioplatania.github.io" # the base hostname & protocol for your site
 
+# Social links.
+# Replace the word 'example' with your username if you want to include the icon in the left sidebar
+# Delete the word 'example' if you don't want to include the icon in the left sidebar
 
-#contacts
-git: "https://github.com/darioplatania"  #Add your github url here.
-facebook: "https://www.facebook.com/dario.platania" #Add your stackoverflow url here.
-instagram: "https://www.instagram.com/plataniadario/"  #Add your twitter url here.
+twitter_username:       # Replace this with your Twitter username
+github_username:      darioplatania  # Replace this with your GitHub username
+linkedin_username:      # Replace this with your LinkedIn username
+google_plus_username: 114015039580630927986/about  # Replace this with your Google+ username
+facebook_username:    dario.platania  # Replace this with your Facebook username
+instagra_username:    plataniadario  # Replace this with your Dribbble username
 
-#disqus comment
-disqus:
-    shortname: "test" #replace with your disqus comment short name
-
-#google analytics
-google:
-    tracking-id: "" #paste your tracking id here
-gems:
-  - jekyll-sitemap
-
-# This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
-
-exclude:
-  - "README.md"
-  - "CHANGELOG.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-permalink: :title
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-author:
-  name      : Dario Platania
-  job       : Computer Engineer
-  bio1       : "Web Developer"
-  bio2       : "Co-Founder & Team Coordinator"
-  thumb     : /images/dp.jpg
-  email     : dariopl91@gmail.com
-  url       :
-  github    : https://github.com/darioplatania
-  facebook  : https://www.facebook.com/SicilyOnRails/?fref=ts
-  instagram : https://www.instagram.com/plataniadario/
+# Build settings
+markdown: kramdown
